@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Age Calculator App</title>
+  </head>
+  <body>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"
+    ></script>
+    <script defer src="./app.js"></script>
+    <container class="container">
+      <div class="input-boxes">
+        <div class="day-box">
+          <p id="text-day" class="text-class">day</p>
+          <input type="number" id="day" placeholder="dd" />
+          <p id="alert-day" class="alert"></p>
+        </div>
+        <div class="month-box">
+          <p id="text-month" class="text-class">month</p>
+          <input type="number" id="month" placeholder="mm" />
+          <p id="alert-month" class="alert"></p>
+        </div>
+        <div class="year-box">
+          <p id="text-year" class="text-class">year</p>
+          <input type="number" id="year" placeholder="yyyy" />
+          <p id="alert-year" class="alert"></p>
+        </div>
+      </div>
+      <button class="enter-btn">
+        <img src="./assets/images/icon-arrow.svg" />
+      </button>
+      <div class="result-box">
+        <h3><span class="color-span" id="count-days">--</span> days</h3>
+        <h3><span class="color-span" id="count-months">--</span> months</h3>
+        <h3><span class="color-span" id="count-years">--</span> years</h3>
+      </div>
+    </container>
+  </body>
+</html>

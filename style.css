@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Bold.ttf"),
+    url("./assets/fonts/Poppins-BoldItalic.ttf"),
+    url("./assets/fonts/Poppins-ExtraBold.ttf"),
+    url("./assets/fonts/Poppins-ExtraBoldItalic.ttf"),
+    url("./assets/fonts/Poppins-Italic.ttf"),
+    url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(180, 11%, 87%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 20px 20px 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.input-boxes {
+  display: flex;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid hsl(0, 0%, 86%);
+  height: 9rem;
+  font-size: 12px;
+  color: hsl(0, 1%, 44%);
+}
+
+input {
+  width: 5rem;
+  height: 3rem;
+  border-radius: 7px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: hsl(0, 0%, 0%);
+  outline-color: hsl(259, 100%, 65%);
+  padding-left: 1rem;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.text-class {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.day-box {
+  margin-right: 1rem;
+}
+
+.month-box {
+  margin-right: 1rem;
+}
+
+.enter-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: hsl(259, 100%, 65%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid hsl(259, 100%, 65%);
+  outline-color: hsl(259, 100%, 65%);
+  position: absolute;
+  top: 9rem;
+  cursor: pointer;
+}
+
+.enter-btn img {
+  width: 2rem;
+  height: 1.2rem;
+}
+
+.enter-btn:hover {
+  background-color: hsl(0, 0%, 0%);
+  border: 2px solid hsl(0, 0%, 0%);
+}
+
+.result-box {
+  padding: 1.6rem 1.6rem 1.6rem 0rem;
+}
+
+.result-box h3 {
+  font-size: 45px;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.color-span {
+  color: hsl(259, 100%, 65%);
+}
+
+.danger {
+  outline-color: hsl(0, 100%, 67%);
+  border-color: hsl(0, 100%, 67%);
+}
+
+.text-danger {
+  color: hsl(0, 100%, 67%);
+}
+
+.alert {
+  font-size: 8.5px;
+  margin-top: 0.5rem;
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+}
+
+/* Laptop, computer */
+@media (min-width: 700px) {
+  .container {
+    border-radius: 20px 20px 150px 20px;
+    width: 35rem;
+    align-items: flex-start;
+    padding-left: 3rem;
+    padding-top: 3rem;
+  }
+
+  .input-boxes {
+    width: 28rem;
+  }
+
+  .day-box {
+    margin-right: 2rem;
+  }
+
+  .month-box {
+    margin-right: 2rem;
+  }
+
+  .enter-btn {
+    top: 9.5rem;
+    left: 31rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .enter-btn img {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .result-box {
+    padding: 0rem;
+  }
+
+  .result-box h3 {
+    font-size: 65px;
+  }
+}
