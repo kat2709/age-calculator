@@ -4,6 +4,8 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ## Overview
 
+[Link to the app](https://kat2709.github.io/age-calculator/)
+
 ### The challenge
 
 Users should be able to:
